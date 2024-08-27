@@ -1,0 +1,120 @@
+.App {
+    text-align: center;
+}
+
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+.App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    background-color: #551E19;
+    margin: 0;
+    padding: 10px;
+}
+
+/*#FAF3DD*/
+/*#C8D5B9*/
+/*#8FC0A9*/
+/*#68B0AB*/
+/*#76B7B3*/
+
+.app-logo {
+    width: 500px;
+}
+
+.backgroundApp {
+    /*background-color: #087E8B;*/
+    padding-top: 20px;
+    overflow-x: hidden;
+    /*min-height: 1000px;*/
+    min-height: 100vh;
+}
+
+.authorSearch {
+    /*font-weight: bold;*/
+}
+
+
+.searchBar {
+    flex: 0 0 100%;
+    justify-content: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    /*text-color: black;*/
+}
+
+.rowPane {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.searchBoxStyle {
+    background-color: #B49286;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+
+.colPane {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 0.9fr 0.2fr 2.2fr;
+    grid-template-rows: 2fr 0.2fr 1fr;
+    /*gap: 0px 0px;*/
+    margin-top: 20px;
+    grid-template-areas:
+    "left right right"
+    ". . ."
+    ". . .";
+    margin-left: 10px;
+}
+
+.left {
+    grid-area: left;
+}
+
+.right {
+    grid-area: right;
+}
